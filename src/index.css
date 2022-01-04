@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(119deg, #3023ae, #53a0fd 47%, #6eb6cc 81%, #b4ec51);
+  height: 100vh;
+}
+
+/* App container */
+
+/* Note: For cold weather */
+.app {
+  height: 95vh;
+  width: 350px;
+  border: 3px solid darkblue;
+  border-radius: 10px;
+  background-image: url("./Images/Cold-cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: black;
+}
+
+/* Note: For hot/warm weather */
+.app.warm {
+  height: 95vh;
+  width: 350px;
+  border: 3px solid red;
+  border-radius: 10px;
+  background-image: url("./Images/Hot-cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form field */
+.input-field {
+  width: 260px;
+  height: 40px;
+  outline: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 10px;
+  color: white;
+  background-color: #AF90AD;
+}
+
+/* Info container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-name {
+  margin-top: 70px;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: bold;
+  background-color: pink;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+.weather-status {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+/* Error Header */
+.not-found {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 50px;
+  color: red;
+}
+
+/* Styling completeed successfully */
